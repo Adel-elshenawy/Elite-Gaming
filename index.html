@@ -960,6 +960,10 @@
                         </div>
                     `;
                 });
+
+                cartItemsContainer.innerHTML += `
+                    <button class="buy-btn hover-target" style="width: 100%; margin-top: 30px; border-color: var(--secondary);" onclick="alert('Redirecting to Secure Checkout...')">BUY NOW</button>
+                `;
             }
             cartCountEl.innerText = totalItems;
             attachHoverEffects(); 
